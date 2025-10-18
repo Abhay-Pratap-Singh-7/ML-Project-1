@@ -2,7 +2,7 @@ import pandas as pd
 from flask import Flask, render_template, request
 import pickle
 
-with open('/Users/abhay/Desktop/Probation/Probation-Project-25/Abhay_Pratap_Singh_Task_10/Project 1/coemissions_classifier_model.pkl', 'rb') as f:
+with open('coemissions_classifier_model.pkl', 'rb') as f:
     ct, rf = pickle.load(f)
 
 app = Flask(__name__)
